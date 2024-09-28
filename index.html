@@ -15,7 +15,7 @@
                   </div>
                   <div class="buttons">
                         <button>Dark</button>
-                        <button onclick="result = '' ; display.innerHTML= result;">Clear</button>
+                        <button onclick="result = '' ; displayResult();">Clear</button>
                         <button onclick="popString();"> <- </button>
                         <button onclick="getData(this);">/</button>
                         <button onclick="getData(this);">7</button>
@@ -32,10 +32,9 @@
                         <button onclick="getData(this);">+</button>
                         <button onclick="getData(this);">0</button>
                         <button onclick="getData(this);">.</button>
-                        <button class="equals" onclick="result = eval(result); 
-                        display.innerHTML = result;
-                        console.log(result);
-                        ">=</button>
+                        <button class="equals" onclick="result = eval(result);
+                               displayResult();
+                              ">=</button>
                   </div>
             </div>
       </div>
