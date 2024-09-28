@@ -12,9 +12,9 @@
 }
 
 .calculator{
-      max-width: 320px;
+      width: 320px;
       background-color: black;
-      max-height: 520px;
+      height: 520px;
 }
 
 .display{
@@ -43,46 +43,17 @@ button{
       color: white;
 }
 
-.container{
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-}
-
-.calculator{
-      max-width: 320px;
-      background-color: black;
-      max-height: 520px;
-}
-
-.display{
-      /* width: 100%; */
-      border: 2px solid white;
-      padding: 2rem 1rem;
-      border-radius: 24px;
-      margin: 22px 10px 22px 10px;
-}
-
-.buttons{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      margin: 0 10px 5px 10px;
-}
-
-button{
-      padding:1rem 0.5rem ;
-      border-radius: 100%;
-      border-style: none;
-      border: 2px solid white;
-      font-size: 1rem;
-      background-color: black;
-      color: white;
-}
-
 .equals{
       grid-column: span 2;
       padding: 1rem 0.5rem;
       border-radius: 1rem;
+}
+
+@media(min-width: 768px){
+      .container{
+            width:100% ;
+      }
+      .calculator{
+            width: 380px;
+      }
 }
