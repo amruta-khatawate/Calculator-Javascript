@@ -1,11 +1,17 @@
-let inputValue = document.querySelector('.calculator.display.js-input');
-let calculation = '';
-console.log(inputValue.innerHTML);
+let display = document.querySelector('.js-input');
+let result = '';
+console.log(display.innerHTML);
+
 
 
 function getData(button){
-      calculation += button.innerHTML;
-      inputValue.innerHTML = `${calculation}`; 
-      console.log(calculation);
-      console.log(typeof calculation);
+      let value = button.innerHTML;
+      result += value;
+      display.innerHTML = result;
+      console.log(result); 
+}
+
+function popString(){
+      result = result.slice(0, -1);
+      display.innerHTML = result;
 }
