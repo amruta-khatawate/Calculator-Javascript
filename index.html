@@ -4,19 +4,19 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>calculator using javascript</title>
-      <script src="main.js"></script>
+
       <link rel="stylesheet" href="style.css">
 </head>
 <body>
       <div class="container">
             <div class="calculator">
                   <div class="display">
-                        <p class="js-input">hi</p>
+                        <p class="js-input"> </p>
                   </div>
                   <div class="buttons">
                         <button>Dark</button>
-                        <button>Clear</button>
-                        <button> <- </button>
+                        <button onclick="result = '' ; display.innerHTML= result;">Clear</button>
+                        <button onclick="popString();"> <- </button>
                         <button onclick="getData(this);">/</button>
                         <button onclick="getData(this);">7</button>
                         <button onclick="getData(this);">8</button>
@@ -32,9 +32,14 @@
                         <button onclick="getData(this);">+</button>
                         <button onclick="getData(this);">0</button>
                         <button onclick="getData(this);">.</button>
-                        <button class="equals">=</button>
+                        <button class="equals" onclick="result = eval(result); 
+                        display.innerHTML = result;
+                        console.log(result);
+                        ">=</button>
                   </div>
             </div>
       </div>
-</body>let cal
+
+      <script src="main.js"></script>
+</body>
 </html>
