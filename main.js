@@ -7,18 +7,36 @@ console.log(display.innerHTML);
 function getData(button){
       let value = button.innerHTML;
       result += value;
-      // display.innerHTML = result;
       displayResult();
       console.log(result); 
 }
 
+//function to remove string or backspace functionality
 function popString(){
       result = result.slice(0, -1);
       displayResult();
-      // display.innerHTML = result;
 }
 
+
+//triggered when equal button is clicked
 function displayResult(){
-      if(result.length <= 20)
             display.innerHTML = result;
+}
+
+
+function darkMode(){
+
+      let modes = document.querySelector('.container');
+      
+      if(document.querySelector('.lightDark').innerHTML === 'Light'){
+            document.querySelector('.lightDark').innerHTML = 'Dark';
+            modes.classList.add('mode');            
+      } else if(document.querySelector('.lightDark').innerHTML === 'Dark'){
+            document.querySelector('.lightDark').innerHTML = 'Light';
+            modes.classList.remove('mode');
+            
+      }
+
+
+
 }
