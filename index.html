@@ -14,25 +14,25 @@
                         <p class="js-input"> </p>
                   </div>
                   <div class="buttons">
-                        <button>Dark</button>
-                        <button onclick="result = '' ; displayResult();">Clear</button>
-                        <button onclick="popString();"> <- </button>
-                        <button onclick="getData(this);">/</button>
+                        <button class="lightDark" onclick="darkMode();">Light</button>
+                        <button style="background-color: rgb(211, 82, 62);" onclick="result = '' ; displayResult();">Clear</button>
+                        <button style="background-color: rgb(208, 124, 72);" onclick="popString();"> <- </button>
+                        <button style="background-color: rgb(84, 177, 196);" onclick="getData(this);">/</button>
                         <button onclick="getData(this);">7</button>
                         <button onclick="getData(this);">8</button>
                         <button onclick="getData(this);">9</button>
-                        <button onclick="getData(this);">*</button>
+                        <button  style="background-color: rgb(72, 113, 208);" onclick="getData(this);">*</button>
                         <button onclick="getData(this);">4</button>
                         <button onclick="getData(this);">5</button>
                         <button onclick="getData(this);">6</button>
-                        <button onclick="getData(this);">-</button>
+                        <button style="background-color: rgb(218, 193, 81);" onclick="getData(this);">-</button>
                         <button onclick="getData(this);">1</button>
                         <button onclick="getData(this);">2</button>
                         <button onclick="getData(this);">3</button>
-                        <button onclick="getData(this);">+</button>
+                        <button style="background-color: rgb(192, 72, 208);" onclick="getData(this);">+</button>
                         <button onclick="getData(this);">0</button>
                         <button onclick="getData(this);">.</button>
-                        <button class="equals" onclick="result = eval(result);
+                        <button  style="background-color: rgb(72, 208, 90);" class="equals" onclick="result = eval(result);
                                displayResult();
                               ">=</button>
                   </div>
